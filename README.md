@@ -1,10 +1,12 @@
 # Geth Private Node
 
-Easy to setup geth private node with lots of ether!
+Easy to setup `geth` private node with lots of ether! 
+
+As easy to use as `ganache` but running bulletproof EVM implementation.
 
 ## Features:
 
-💪 geth node running in `dev` mode
+👨🏼‍💻 ideal for development purposes
 
 💦 no difficult PoW mining algorithm
 
@@ -12,6 +14,7 @@ Easy to setup geth private node with lots of ether!
 
 💸 preloads and unlocks multiple accounts
 
+Accounts:
 ```
 0xe6ac5629b9ade2132f42887fbbc3a3860afbd07b (~10000 ETH)
 0x700f98b33992cc073744d331d70037ba0d2bca45 (~10000 ETH)
