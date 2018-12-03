@@ -6,7 +6,7 @@ ADD scripts ./scripts
 
 RUN ./scripts/setup-node.sh
 
-CMD ./scripts/run-node.sh
+CMD ./scripts/run.sh
 ENTRYPOINT []
 # base image exposes already 8545, we expose ws port additionally
 EXPOSE 8546

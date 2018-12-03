@@ -3,8 +3,6 @@
  * For simplicity this is written directly in ES5, instead of compiling down with babel or anything.
  */
 
-console.log("Accounts#: ", eth.accounts.length);
-
 var toWei = web3.toWei;
 
 // maps private keys to desired ether balances
@@ -42,7 +40,7 @@ function getLastArrayElement(arr) {
 function importAndSetupAccount(privateKey, balance, fromAccount) {
   personal.importRawKey(privateKey, "");
   var publicKey = getLastArrayElement(eth.accounts);
-  personal.unlockAccount(publicKey, "");
+  personal.unlockAccount(publicKey, "", 0);
   eth.sendTransaction({ from: mainAccount, to: publicKey, value: balance });
 
   console.log(
