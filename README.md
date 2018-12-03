@@ -1,6 +1,6 @@
 # Geth Private Node
 
-Easy to setup `geth` private node with lots of ether! 
+Easy to setup `geth` private node with lots of ether!
 
 As easy to use as `ganache` but running bulletproof EVM implementation.
 
@@ -15,6 +15,7 @@ As easy to use as `ganache` but running bulletproof EVM implementation.
 💸 preloads and unlocks multiple accounts
 
 Accounts:
+
 ```
 0xe6ac5629b9ade2132f42887fbbc3a3860afbd07b (~10000 ETH)
 0x700f98b33992cc073744d331d70037ba0d2bca45 (~10000 ETH)
@@ -33,6 +34,12 @@ You will need docker to run it:
 
 ```bash
 docker run -p 8545:8545 -p 8546:8546 krzkaczor/geth-private-node
+```
+
+To attach to geth console run:
+
+```bash
+docker exec -it CONTAINER_ID geth attach http://127.0.0.1:8545
 ```
 
 aaand that's it! If you want to use metamask just import private key. Private keys are [here](https://github.com/krzkaczor/geth-private-node/blob/master/scripts/dev-mode.js#L11).
